@@ -35,6 +35,9 @@ shepard = require("shepard").server();
 //synchronize all ec2 instances to shepard
 ectwo.instances.syncTo(shepard);
 
+//you can also synchronize very specific instances
+ectwo.instances.syncTo({ "tags": { key: "type", value: "red5" } }, shepard);
+
 
 shepard.findAll(function(err, clients) {
   client.restart();
