@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+
+var commander = require("commander");
+
+
+commander.
+command("client", "start the client server").
+command("server", "start the main server").
+parse(process.argv);

@@ -1,0 +1,12 @@
+#!/usr/bin/env node
+
+var commander = require("commander"),
+shepard       = require("..");
+
+
+commander.
+option("-c, --config [config-path]", "the config path ", String, require("./defaultConfigPath")("server")).
+parse(process.argv);
+
+
+shepard.server(require(commander.config)).listen();

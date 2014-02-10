@@ -1,0 +1,32 @@
+{
+  "name": "shepard",
+  "version": "0.0.0",
+  "description": "Client:",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/crcn/node-shepard.git"
+  },
+  "author": "",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "gitHead": "5a1f1e069901d30d0727300e768febff4b130d77",
+  "dependencies": {
+    "outcome": "0.0.x",
+    "gumbo": "0.5.x",
+    "bindable": "~0.3.39",
+    "dnode": "~1.0.5",
+    "commander": "~2.1.0",
+    "awsm": "0.0.0",
+    "packages": "0.0.5",
+    "protoclass": "0.0.5"
+  },
+  "bin": {
+    "shepard-client": "./bin/shepard-client",
+    "shepard-server": "./bin/shepard-server",
+    "shepard": "./bin/shepard"
+  }
+}
